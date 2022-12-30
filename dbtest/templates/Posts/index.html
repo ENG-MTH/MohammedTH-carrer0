@@ -1,0 +1,9 @@
+{% if get_all_post %}
+    <ul>
+    {% for posts in get_all_post %}
+        <li><a href="/posts/{{ posts.id }}/">{{ posts.posts }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Posts are available.</p>
+{% endif %}
